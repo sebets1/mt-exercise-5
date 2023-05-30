@@ -16,7 +16,7 @@ data:
         voc_limit: ?
         # or (= not both!) a file with a vocabulary built before starting the training:
         voc_file : "?"
-        tokenizer_type: "?"
+        tokenizer_type: "subword-nmt"
         tokenizer_cfg:
             ?
     trg: 
@@ -28,7 +28,7 @@ data:
         voc_limit: ?
         # or (= not both!) a file with a vocabulary built before starting the training:
         voc_file : "?"
-        tokenizer_type: "?"
+        tokenizer_type: "subword-nmt"
         tokenizer_cfg:
             ?
 

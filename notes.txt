@@ -1,0 +1,6 @@
+splitting data to only have 100k lines:
+- go to data folder in mt5 and run split_data.py. It will create training files for source and target language plus a smaller sample with 5000 lines for testing
+
+
+BPE training to build vocabulary:
+python3 -m joeynmt.scripts.build_vocab data/train_100k.ro data/train_100k.de --output data/vocab.bpe -s 2000 --total-symbols
