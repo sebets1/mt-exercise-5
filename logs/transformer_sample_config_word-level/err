@@ -1,16 +1,199 @@
+2023-05-31 13:38:05,812 - INFO - root - Hello! This is Joey-NMT (version 2.2.0).
+2023-05-31 13:38:05,813 - INFO - joeynmt.helpers -                           cfg.name : transformer_sample_config_word-level
+2023-05-31 13:38:05,813 - INFO - joeynmt.helpers -                cfg.joeynmt_version : 2.0.0
+2023-05-31 13:38:05,813 - INFO - joeynmt.helpers -                     cfg.data.train : data/sample_train_5000
+2023-05-31 13:38:05,813 - INFO - joeynmt.helpers -                       cfg.data.dev : data/dev.ro-de
+2023-05-31 13:38:05,813 - INFO - joeynmt.helpers -                      cfg.data.test : data/test.ro-de
+2023-05-31 13:38:05,813 - INFO - joeynmt.helpers -              cfg.data.dataset_type : plain
+2023-05-31 13:38:05,813 - INFO - joeynmt.helpers -                  cfg.data.src.lang : ro
+2023-05-31 13:38:05,814 - INFO - joeynmt.helpers -                 cfg.data.src.level : word
+2023-05-31 13:38:05,814 - INFO - joeynmt.helpers -             cfg.data.src.lowercase : False
+2023-05-31 13:38:05,814 - INFO - joeynmt.helpers -       cfg.data.src.max_sent_length : 100
+2023-05-31 13:38:05,814 - INFO - joeynmt.helpers -             cfg.data.src.voc_limit : 2000
+2023-05-31 13:38:05,814 - INFO - joeynmt.helpers -        cfg.data.src.tokenizer_type : subword-nmt
+2023-05-31 13:38:05,814 - INFO - joeynmt.helpers - cfg.data.src.tokenizer_cfg.pretokenizer : none
+2023-05-31 13:38:05,814 - INFO - joeynmt.helpers -                  cfg.data.trg.lang : de
+2023-05-31 13:38:05,814 - INFO - joeynmt.helpers -                 cfg.data.trg.level : word
+2023-05-31 13:38:05,814 - INFO - joeynmt.helpers -             cfg.data.trg.lowercase : False
+2023-05-31 13:38:05,814 - INFO - joeynmt.helpers -       cfg.data.trg.max_sent_length : 100
+2023-05-31 13:38:05,814 - INFO - joeynmt.helpers -             cfg.data.trg.voc_limit : 2000
+2023-05-31 13:38:05,814 - INFO - joeynmt.helpers -        cfg.data.trg.tokenizer_type : subword-nmt
+2023-05-31 13:38:05,814 - INFO - joeynmt.helpers - cfg.data.trg.tokenizer_cfg.pretokenizer : none
+2023-05-31 13:38:05,814 - INFO - joeynmt.helpers -              cfg.testing.beam_size : 5
+2023-05-31 13:38:05,814 - INFO - joeynmt.helpers -                  cfg.testing.alpha : 1.0
+2023-05-31 13:38:05,815 - INFO - joeynmt.helpers -           cfg.training.random_seed : 42
+2023-05-31 13:38:05,815 - INFO - joeynmt.helpers -             cfg.training.optimizer : adam
+2023-05-31 13:38:05,815 - INFO - joeynmt.helpers -         cfg.training.normalization : tokens
+2023-05-31 13:38:05,815 - INFO - joeynmt.helpers -         cfg.training.learning_rate : 0.0003
+2023-05-31 13:38:05,815 - INFO - joeynmt.helpers -            cfg.training.batch_size : 2048
+2023-05-31 13:38:05,815 - INFO - joeynmt.helpers -            cfg.training.batch_type : token
+2023-05-31 13:38:05,815 - INFO - joeynmt.helpers -       cfg.training.eval_batch_size : 1024
+2023-05-31 13:38:05,815 - INFO - joeynmt.helpers -       cfg.training.eval_batch_type : token
+2023-05-31 13:38:05,815 - INFO - joeynmt.helpers -            cfg.training.scheduling : plateau
+2023-05-31 13:38:05,815 - INFO - joeynmt.helpers -              cfg.training.patience : 8
+2023-05-31 13:38:05,815 - INFO - joeynmt.helpers -          cfg.training.weight_decay : 0.0
+2023-05-31 13:38:05,815 - INFO - joeynmt.helpers -       cfg.training.decrease_factor : 0.7
+2023-05-31 13:38:05,815 - INFO - joeynmt.helpers - cfg.training.early_stopping_metric : ppl
+2023-05-31 13:38:05,815 - INFO - joeynmt.helpers -                cfg.training.epochs : 10
+2023-05-31 13:38:05,815 - INFO - joeynmt.helpers -       cfg.training.validation_freq : 500
+2023-05-31 13:38:05,815 - INFO - joeynmt.helpers -          cfg.training.logging_freq : 100
+2023-05-31 13:38:05,815 - INFO - joeynmt.helpers -           cfg.training.eval_metric : bleu
+2023-05-31 13:38:05,815 - INFO - joeynmt.helpers -             cfg.training.model_dir : models/transformer_sample_config_word-level
+2023-05-31 13:38:05,815 - INFO - joeynmt.helpers -             cfg.training.overwrite : False
+2023-05-31 13:38:05,815 - INFO - joeynmt.helpers -               cfg.training.shuffle : True
+2023-05-31 13:38:05,815 - INFO - joeynmt.helpers -              cfg.training.use_cuda : False
+2023-05-31 13:38:05,816 - INFO - joeynmt.helpers -     cfg.training.max_output_length : 100
+2023-05-31 13:38:05,816 - INFO - joeynmt.helpers -     cfg.training.print_valid_sents : [0, 1, 2, 3, 4]
+2023-05-31 13:38:05,816 - INFO - joeynmt.helpers -       cfg.training.label_smoothing : 0.3
+2023-05-31 13:38:05,816 - INFO - joeynmt.helpers -              cfg.model.initializer : xavier_uniform
+2023-05-31 13:38:05,816 - INFO - joeynmt.helpers -         cfg.model.bias_initializer : zeros
+2023-05-31 13:38:05,816 - INFO - joeynmt.helpers -                cfg.model.init_gain : 1.0
+2023-05-31 13:38:05,816 - INFO - joeynmt.helpers -        cfg.model.embed_initializer : xavier_uniform
+2023-05-31 13:38:05,816 - INFO - joeynmt.helpers -          cfg.model.embed_init_gain : 1.0
+2023-05-31 13:38:05,816 - INFO - joeynmt.helpers -          cfg.model.tied_embeddings : False
+2023-05-31 13:38:05,816 - INFO - joeynmt.helpers -             cfg.model.tied_softmax : True
+2023-05-31 13:38:05,816 - INFO - joeynmt.helpers -             cfg.model.encoder.type : transformer
+2023-05-31 13:38:05,816 - INFO - joeynmt.helpers -       cfg.model.encoder.num_layers : 4
+2023-05-31 13:38:05,816 - INFO - joeynmt.helpers -        cfg.model.encoder.num_heads : 2
+2023-05-31 13:38:05,816 - INFO - joeynmt.helpers - cfg.model.encoder.embeddings.embedding_dim : 256
+2023-05-31 13:38:05,816 - INFO - joeynmt.helpers - cfg.model.encoder.embeddings.scale : True
+2023-05-31 13:38:05,816 - INFO - joeynmt.helpers - cfg.model.encoder.embeddings.dropout : 0
+2023-05-31 13:38:05,816 - INFO - joeynmt.helpers -      cfg.model.encoder.hidden_size : 256
+2023-05-31 13:38:05,816 - INFO - joeynmt.helpers -          cfg.model.encoder.ff_size : 512
+2023-05-31 13:38:05,816 - INFO - joeynmt.helpers -          cfg.model.encoder.dropout : 0
+2023-05-31 13:38:05,816 - INFO - joeynmt.helpers -             cfg.model.decoder.type : transformer
+2023-05-31 13:38:05,816 - INFO - joeynmt.helpers -       cfg.model.decoder.num_layers : 1
+2023-05-31 13:38:05,816 - INFO - joeynmt.helpers -        cfg.model.decoder.num_heads : 2
+2023-05-31 13:38:05,816 - INFO - joeynmt.helpers - cfg.model.decoder.embeddings.embedding_dim : 256
+2023-05-31 13:38:05,816 - INFO - joeynmt.helpers - cfg.model.decoder.embeddings.scale : True
+2023-05-31 13:38:05,817 - INFO - joeynmt.helpers - cfg.model.decoder.embeddings.dropout : 0
+2023-05-31 13:38:05,817 - INFO - joeynmt.helpers -      cfg.model.decoder.hidden_size : 256
+2023-05-31 13:38:05,817 - INFO - joeynmt.helpers -          cfg.model.decoder.ff_size : 512
+2023-05-31 13:38:05,817 - INFO - joeynmt.helpers -          cfg.model.decoder.dropout : 0
+2023-05-31 13:38:05,828 - INFO - joeynmt.data - Building tokenizer...
+2023-05-31 13:38:05,828 - INFO - joeynmt.tokenizers - ro tokenizer: BasicTokenizer(level=word, lowercase=False, normalize=False, filter_by_length=(-1, -1), pretokenizer=none)
+2023-05-31 13:38:05,828 - INFO - joeynmt.tokenizers - de tokenizer: BasicTokenizer(level=word, lowercase=False, normalize=False, filter_by_length=(-1, -1), pretokenizer=none)
+2023-05-31 13:38:05,828 - INFO - joeynmt.data - Loading train set...
+2023-05-31 13:38:05,836 - INFO - joeynmt.data - Building vocabulary...
+2023-05-31 13:38:05,936 - INFO - joeynmt.data - Loading dev set...
+2023-05-31 13:38:05,938 - INFO - joeynmt.data - Loading test set...
+2023-05-31 13:38:05,943 - INFO - joeynmt.data - Data loaded.
+2023-05-31 13:38:05,943 - INFO - joeynmt.data - Train dataset: PlaintextDataset(split=train, len=4999, src_lang=ro, trg_lang=de, has_trg=True, random_subset=-1)
+2023-05-31 13:38:05,943 - INFO - joeynmt.data - Valid dataset: PlaintextDataset(split=dev, len=912, src_lang=ro, trg_lang=de, has_trg=True, random_subset=-1)
+2023-05-31 13:38:05,943 - INFO - joeynmt.data -  Test dataset: PlaintextDataset(split=test, len=1677, src_lang=ro, trg_lang=de, has_trg=True, random_subset=-1)
+2023-05-31 13:38:05,943 - INFO - joeynmt.data - First training example:
+	[SRC] Al Gore despre evitarea crizei climei.
+	[TRG] Al Gore: Die Abwendung der Klimakatastrophe
+2023-05-31 13:38:05,943 - INFO - joeynmt.data - First 10 Src tokens: (0) <unk> (1) <pad> (2) <s> (3) </s> (4) de (5) să (6) în (7) a (8) care (9) o
+2023-05-31 13:38:05,943 - INFO - joeynmt.data - First 10 Trg tokens: (0) <unk> (1) <pad> (2) <s> (3) </s> (4) und (5) die (6) der (7) das (8) in (9) zu
+2023-05-31 13:38:05,944 - INFO - joeynmt.data - Number of unique Src tokens (vocab_size): 2004
+2023-05-31 13:38:05,944 - INFO - joeynmt.data - Number of unique Trg tokens (vocab_size): 2004
+2023-05-31 13:38:05,974 - INFO - joeynmt.model - Building an encoder-decoder model...
+2023-05-31 13:38:06,055 - INFO - joeynmt.model - Enc-dec model built.
+2023-05-31 13:38:06,064 - INFO - joeynmt.model - Total params: 3925248
+2023-05-31 13:38:06,065 - INFO - joeynmt.training - Model(
+	encoder=TransformerEncoder(num_layers=4, num_heads=2, alpha=1.0, layer_norm="pre", activation=ReLU()),
+	decoder=TransformerDecoder(num_layers=1, num_heads=2, alpha=1.0, layer_norm="post", activation=ReLU()),
+	src_embed=Embeddings(embedding_dim=256, vocab_size=2004),
+	trg_embed=Embeddings(embedding_dim=256, vocab_size=2004),
+	loss_function=XentLoss(criterion=KLDivLoss(), smoothing=0.3))
+2023-05-31 13:38:06,065 - INFO - joeynmt.builders - Adam(lr=0.0003, weight_decay=0.0, betas=(0.9, 0.999))
+2023-05-31 13:38:06,065 - INFO - joeynmt.builders - ReduceLROnPlateau(mode=min, verbose=False, threshold_mode=abs, eps=0.0, factor=0.7, patience=8)
+2023-05-31 13:38:06,065 - INFO - joeynmt.training - Train stats:
+	device: cpu
+	n_gpu: 0
+	16-bits training: False
+	gradient accumulation: 1
+	batch size per device: 2048
+	effective batch size (w. parallel & accumulation): 2048
+2023-05-31 13:38:06,065 - INFO - joeynmt.training - EPOCH 1
+2023-05-31 13:39:11,269 - INFO - joeynmt.training - Epoch   1, Step:      100, Batch Loss:     3.259454, Batch Acc: 0.234078, Tokens per Sec:     1005, Lr: 0.000300
+2023-05-31 13:39:35,794 - INFO - joeynmt.training - Epoch   1: total training loss 451.24
+2023-05-31 13:39:35,795 - INFO - joeynmt.training - EPOCH 2
+2023-05-31 13:40:15,689 - INFO - joeynmt.training - Epoch   2, Step:      200, Batch Loss:     3.163184, Batch Acc: 0.259026, Tokens per Sec:      998, Lr: 0.000300
+2023-05-31 13:41:04,373 - INFO - joeynmt.training - Epoch   2: total training loss 420.80
+2023-05-31 13:41:04,373 - INFO - joeynmt.training - EPOCH 3
+2023-05-31 13:41:19,010 - INFO - joeynmt.training - Epoch   3, Step:      300, Batch Loss:     2.985855, Batch Acc: 0.275380, Tokens per Sec:     1042, Lr: 0.000300
+2023-05-31 13:42:25,007 - INFO - joeynmt.training - Epoch   3, Step:      400, Batch Loss:     2.881120, Batch Acc: 0.279291, Tokens per Sec:      984, Lr: 0.000300
+2023-05-31 13:42:34,527 - INFO - joeynmt.training - Epoch   3: total training loss 395.28
+2023-05-31 13:42:34,528 - INFO - joeynmt.training - EPOCH 4
+2023-05-31 13:43:29,701 - INFO - joeynmt.training - Epoch   4, Step:      500, Batch Loss:     2.757997, Batch Acc: 0.299617, Tokens per Sec:      995, Lr: 0.000300
+2023-05-31 13:43:29,702 - WARNING - joeynmt.helpers - `alpha` option is obsolete. Please use `beam_alpha`, instead.
+2023-05-31 13:43:29,702 - INFO - joeynmt.prediction - Predicting 912 example(s)... (Greedy decoding with min_output_length=1, max_output_length=-1, return_prob='none', generate_unk=True, repetition_penalty=-1, no_repeat_ngram_size=-1)
+Predicting...:   0%|          | 0/912 [00:00<?, ?it/s]Predicting...:   5%|▌         | 46/912 [00:04<01:17, 11.22it/s]Predicting...:  11%|█         | 96/912 [00:06<00:48, 16.91it/s]Predicting...:  14%|█▎        | 125/912 [00:07<00:45, 17.12it/s]Predicting...:  16%|█▋        | 150/912 [00:09<00:45, 16.89it/s]Predicting...:  21%|██▏       | 196/912 [00:10<00:34, 20.96it/s]Predicting...:  25%|██▌       | 232/912 [00:16<00:55, 12.34it/s]Predicting...:  29%|██▉       | 266/912 [00:17<00:44, 14.48it/s]Predicting...:  32%|███▏      | 296/912 [00:24<01:07,  9.14it/s]Predicting...:  36%|███▋      | 331/912 [00:29<01:12,  8.01it/s]Predicting...:  42%|████▏     | 380/912 [00:32<00:52, 10.15it/s]Predicting...:  46%|████▌     | 421/912 [00:33<00:38, 12.63it/s]Predicting...:  51%|█████     | 466/912 [00:35<00:29, 15.32it/s]Predicting...:  55%|█████▍    | 498/912 [00:37<00:26, 15.77it/s]Predicting...:  59%|█████▉    | 539/912 [00:39<00:22, 16.91it/s]Predicting...:  62%|██████▏   | 568/912 [00:45<00:33, 10.23it/s]Predicting...:  65%|██████▌   | 596/912 [00:48<00:29, 10.67it/s]Predicting...:  69%|██████▊   | 626/912 [00:54<00:36,  7.84it/s]Predicting...:  71%|███████▏  | 651/912 [00:56<00:30,  8.52it/s]Predicting...:  74%|███████▍  | 678/912 [00:58<00:23,  9.75it/s]Predicting...:  77%|███████▋  | 703/912 [01:03<00:26,  7.95it/s]Predicting...:  80%|████████  | 732/912 [01:05<00:19,  9.04it/s]Predicting...:  83%|████████▎ | 758/912 [01:07<00:15, 10.21it/s]Predicting...:  87%|████████▋ | 793/912 [01:12<00:14,  8.32it/s]Predicting...:  90%|█████████ | 825/912 [01:15<00:09,  9.42it/s]Predicting...:  94%|█████████▍| 855/912 [01:16<00:05, 10.94it/s]Predicting...:  99%|█████████▊| 900/912 [01:21<00:01, 10.35it/s]Predicting...: 100%|██████████| 912/912 [01:21<00:00, 11.48it/s]Predicting...: 100%|██████████| 912/912 [01:21<00:00, 11.14it/s]
+2023-05-31 13:44:51,595 - INFO - joeynmt.prediction - Evaluation result (greedy) loss:   2.62, ppl:  13.69, acc:   0.32, generation: 81.8742[sec], evaluation: 0.0000[sec]
+2023-05-31 13:44:51,596 - INFO - joeynmt.training - Hooray! New best validation result [ppl]!
+2023-05-31 13:44:51,774 - INFO - joeynmt.training - Example #0
+2023-05-31 13:44:51,776 - INFO - joeynmt.training - 	Source:     Anul trecut am aratat aceste doua diapozitive pentru a  demonstra ca intreaga calota polara  care in marea majoritate a ultimilor 3 milioane de ani  a fost de dimensiunea a 48 de state de marime mica,  s-a micsorat cu 40% .
+2023-05-31 13:44:51,776 - INFO - joeynmt.training - 	Reference:  Letztes Jahr habe ich diese beiden Folien gezeigt, um zu veranschaulichen, dass die arktische Eiskappe, die für annähernd drei Millionen Jahre die Grösse der unteren 48 Staaten hatte, um 40 Prozent geschrumpft ist.
+2023-05-31 13:44:51,776 - INFO - joeynmt.training - 	Hypothesis: Ich habe ich ich <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+2023-05-31 13:44:51,776 - INFO - joeynmt.training - Example #1
+2023-05-31 13:44:51,777 - INFO - joeynmt.training - 	Source:     Dar aceasta diminueaza seriozitatea acestei probleme speciale  deoarece nu arata grosimea ghetii.
+2023-05-31 13:44:51,777 - INFO - joeynmt.training - 	Reference:  Aber dies drückt nicht stark genug die Ernsthaftigkeit dieses speziellen Problems aus, da es nicht die Dicke des Eises zeigt.
+2023-05-31 13:44:51,777 - INFO - joeynmt.training - 	Hypothesis: Aber ich sie sie nicht <unk> <unk> <unk> <unk> <unk>
+2023-05-31 13:44:51,777 - INFO - joeynmt.training - Example #2
+2023-05-31 13:44:51,778 - INFO - joeynmt.training - 	Source:     Calota polara este, intr-un fel,  inima care bate a sistemulul climatic global.
+2023-05-31 13:44:51,778 - INFO - joeynmt.training - 	Reference:  In gewissem Sinne ist die arktische Eiskappe das schlagende Herz unseres globalen Klimasystems.
+2023-05-31 13:44:51,778 - INFO - joeynmt.training - 	Hypothesis: <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+2023-05-31 13:44:51,778 - INFO - joeynmt.training - Example #3
+2023-05-31 13:44:51,779 - INFO - joeynmt.training - 	Source:     Ea se extinde iarna si se contracta vara.
+2023-05-31 13:44:51,780 - INFO - joeynmt.training - 	Reference:  Sie wächst im Winter und schrumpft im Sommer.
+2023-05-31 13:44:51,780 - INFO - joeynmt.training - 	Hypothesis: Es gibt <unk> <unk> und <unk> <unk>
+2023-05-31 13:44:51,780 - INFO - joeynmt.training - Example #4
+2023-05-31 13:44:51,781 - INFO - joeynmt.training - 	Source:     Urmatorul diapozitiv pe care vi-l voi arata va fi  o vedere rapida asupra la ceea ce s-a intamplat in ultimii 25 de ani.
+2023-05-31 13:44:51,782 - INFO - joeynmt.training - 	Reference:  Die nächste Folie, die ich Ihnen zeige, ist eine Zeitrafferaufnahme was in den letzten 25 Jahren passiert ist.
+2023-05-31 13:44:51,782 - INFO - joeynmt.training - 	Hypothesis: <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+2023-05-31 13:45:26,640 - INFO - joeynmt.training - Epoch   4: total training loss 372.46
+2023-05-31 13:45:26,640 - INFO - joeynmt.training - EPOCH 5
+2023-05-31 13:45:55,586 - INFO - joeynmt.training - Epoch   5, Step:      600, Batch Loss:     2.466952, Batch Acc: 0.320341, Tokens per Sec:     1052, Lr: 0.000300
+2023-05-31 13:46:48,795 - INFO - joeynmt.model - Building an encoder-decoder model...
+2023-05-31 13:46:48,914 - INFO - joeynmt.model - Enc-dec model built.
+2023-05-31 13:46:48,988 - INFO - joeynmt.helpers - Load model from /mnt/c/Users/serai/Desktop/mt5/mt-exercise-5/models/transformer_sample_config_word-level/500.ckpt.
+2023-05-31 13:46:48,996 - INFO - joeynmt.prediction - Model(
+	encoder=TransformerEncoder(num_layers=4, num_heads=2, alpha=1.0, layer_norm="pre", activation=ReLU()),
+	decoder=TransformerDecoder(num_layers=1, num_heads=2, alpha=1.0, layer_norm="post", activation=ReLU()),
+	src_embed=Embeddings(embedding_dim=256, vocab_size=2004),
+	trg_embed=Embeddings(embedding_dim=256, vocab_size=2004),
+	loss_function=None)
+2023-05-31 13:46:48,998 - INFO - joeynmt.prediction - Decoding on dev set...
+2023-05-31 13:46:48,998 - WARNING - joeynmt.helpers - `alpha` option is obsolete. Please use `beam_alpha`, instead.
+2023-05-31 13:46:48,999 - INFO - joeynmt.prediction - Predicting 912 example(s)... (Beam search with beam_size=5, beam_alpha=1.0, n_best=1, min_output_length=1, max_output_length=-1, return_prob='none', generate_unk=True, repetition_penalty=-1, no_repeat_ngram_size=-1)
+Predicting...:   0%|          | 0/912 [00:00<?, ?it/s]Predicting...:   7%|▋         | 64/912 [00:02<00:37, 22.40it/s]Predicting...:  14%|█▍        | 128/912 [00:05<00:36, 21.70it/s]Predicting...:  14%|█▍        | 128/912 [00:08<00:52, 14.90it/s]
 Traceback (most recent call last):
-  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+  File "/usr/local/lib/python3.10/runpy.py", line 196, in _run_module_as_main
     return _run_code(code, main_globals, None,
-  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+  File "/usr/local/lib/python3.10/runpy.py", line 86, in _run_code
     exec(code, run_globals)
-  File "/mnt/c/Users/julia/Desktop/Seraina_Zeug/joeynmt/joeynmt/__main__.py", line 61, in <module>
+  File "/mnt/c/Users/serai/Desktop/mt5/joeynmt/joeynmt/__main__.py", line 61, in <module>
     main()
-  File "/mnt/c/Users/julia/Desktop/Seraina_Zeug/joeynmt/joeynmt/__main__.py", line 41, in main
+  File "/mnt/c/Users/serai/Desktop/mt5/joeynmt/joeynmt/__main__.py", line 41, in main
     train(cfg_file=args.config_path, skip_test=args.skip_test)
-  File "/mnt/c/Users/julia/Desktop/Seraina_Zeug/joeynmt/joeynmt/training.py", line 791, in train
-    cfg = load_config(Path(cfg_file))
-  File "/mnt/c/Users/julia/Desktop/Seraina_Zeug/joeynmt/joeynmt/helpers.py", line 171, in load_config
-    with path.open("r", encoding="utf-8") as ymlfile:
-  File "/usr/lib/python3.10/pathlib.py", line 1119, in open
-    return self._accessor.open(self, mode, buffering, encoding, errors,
-FileNotFoundError: [Errno 2] No such file or directory: 'scripts/../configs/transformer_sample_config_word-level.yaml'
+  File "/mnt/c/Users/serai/Desktop/mt5/joeynmt/joeynmt/training.py", line 846, in train
+    test(
+  File "/mnt/c/Users/serai/Desktop/mt5/joeynmt/joeynmt/prediction.py", line 424, in test
+    _, _, hypotheses, hypotheses_raw, seq_scores, att_scores, = predict(
+  File "/mnt/c/Users/serai/Desktop/mt5/joeynmt/joeynmt/prediction.py", line 178, in predict
+    output, hyp_scores, attention_scores = search(
+  File "/mnt/c/Users/serai/Desktop/mt5/joeynmt/joeynmt/search.py", line 730, in search
+    stacked_output, stacked_scores, stacked_attention_scores = beam_search(
+  File "/mnt/c/Users/serai/Desktop/mt5/joeynmt/joeynmt/search.py", line 429, in beam_search
+    logits, _, _, _ = model(  # logits before final softmax
+  File "/mnt/c/Users/serai/Desktop/mt5/mt-exercise-5/venvs/torch3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/c/Users/serai/Desktop/mt5/joeynmt/joeynmt/model.py", line 124, in forward
+    outputs, hidden, att_probs, att_vectors = self._decode(**kwargs)
+  File "/mnt/c/Users/serai/Desktop/mt5/joeynmt/joeynmt/model.py", line 212, in _decode
+    return self.decoder(
+  File "/mnt/c/Users/serai/Desktop/mt5/mt-exercise-5/venvs/torch3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/c/Users/serai/Desktop/mt5/joeynmt/joeynmt/decoders.py", line 582, in forward
+    x, att = layer(x=x,
+  File "/mnt/c/Users/serai/Desktop/mt5/mt-exercise-5/venvs/torch3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/c/Users/serai/Desktop/mt5/joeynmt/joeynmt/transformer_layers.py", line 376, in forward
+    h1, _ = self.trg_trg_att(x, x, x, mask=trg_mask)
+  File "/mnt/c/Users/serai/Desktop/mt5/mt-exercise-5/venvs/torch3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/c/Users/serai/Desktop/mt5/joeynmt/joeynmt/transformer_layers.py", line 91, in forward
+    scores = scores.masked_fill(~mask.unsqueeze(1), float("-inf"))
+KeyboardInterrupt

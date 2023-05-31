@@ -3,4 +3,5 @@ splitting data to only have 100k lines:
 
 
 BPE training to build vocabulary:
-python3 -m joeynmt.scripts.build_vocab data/train_100k.ro data/train_100k.de --output data/vocab.bpe -s 2000 --total-symbols
+built shell script and py script for cleaning (in script folder)
+

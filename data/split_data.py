@@ -26,3 +26,6 @@ split_data("train.ro-de.de", "train_100k.de", 100000)
 split_data("train.ro-de.ro", "train_100k.ro", 100000)
 split_data("train.ro-de.de", "sample_train_5000.de", 5000)
 split_data("train.ro-de.ro", "sample_train_5000.ro", 5000)
+
+split_data("train.ro-de.de", "train_20k.de", 20000)
+split_data("train.ro-de.ro", "train_20k.ro", 20000)
